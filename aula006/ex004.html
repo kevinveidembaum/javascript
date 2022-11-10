@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font: bold 2em monospace;
+            text-align: center;
+        }
+
+        #fonte {
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        div {
+            background-color: rgba(0, 0, 255, 0.521);
+            width: 70%;
+            height: 50%;
+            border-radius: 35px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <script>
+            var nome = prompt("Qual é o seu nome?")
+            document.write(`Olá <span id="fonte">${nome.toUpperCase()}</span>, seu nome possui ${nome.length} letras`)
+        </script>
+    </div>
+
+</body>
+</html>

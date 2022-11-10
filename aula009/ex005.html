@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: coral;
+            font: normal 1.2em 'Courier New';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="teste" >Clique aqui</div>
+    <div class="teste2">
+        teste
+    </div>
+
+    <script>
+        let p1 = document.getElementsByTagName('p')[0]
+        let p2 = document.getElementsByTagName('p')[1]
+        let d = window.document.querySelector('div#teste')
+        let d2 = window.document.querySelector('div.teste2')
+        
+        d.style.background = 'blue'
+        d2.innerText = 'Fui modificado por JavaScript!!'
+
+        /*
+        let div = window.document.getElementById('teste')
+
+        div.style.background = 'red'
+        div.innerText = 'Fui modificado'
+        window.document.getElementById('teste').innerText = 'olá'
+        */
+
+
+        window.document.write('No primeiro parágrafo está escrito assim: ' + p1.innerText)
+        
+        window.document.write('<em><strong>No segundo parágrafo está escrito assim:</strong> </em>' + p2.innerHTML)
+
+        p2.style.color = 'blue'
+        
+    </script>
+
+</body>
+</html>
