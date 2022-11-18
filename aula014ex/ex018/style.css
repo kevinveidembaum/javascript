@@ -7,6 +7,23 @@ body {
 
 header {
     text-align: center;
+    color: white;
+}
+
+select {
+    margin-left: 70px;
+
+}
+
+option {
+    text-align: center;
+    padding: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#res {
+    margin-left: 100px;
 }
 
 section{
@@ -18,8 +35,13 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
 }
 
+div {
+    padding: 10px;
+}
+
 footer{
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    color: white;
 }
